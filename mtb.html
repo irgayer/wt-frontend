@@ -11,7 +11,8 @@
     integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 
     <link rel="stylesheet" href="css/mtb.css">
-
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/navbar.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@500&family=Rajdhani:wght@300;500;600;700&family=Ubuntu:wght@300;500;700&display=swap"
@@ -28,33 +29,8 @@
    
     
     <header id="header" class="header">
-
-        <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-transparent">
-            <a class="navbar-brand" href="#">
-                <img src="images/borko-logo-black.webp" width="165" height="40" alt="">
-              </a>
-
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarScroll" 
-                     aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-
-            <div class="collapse navbar-collapse" id="navbarScroll">
-                <ul class="navbar-nav mr-auto">
-                  <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                  <li class="nav-item"><a class="nav-link disabled" href="#">Shop</a></li>
-                  <li class="nav-item active"><a class="nav-link" href="mtb.html">MTB Spotlight<span class="sr-only">(current)</span></a></li>
-                  <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-                  <li class="nav-item"><a class="nav-link disabled" href="#">Meet The Team</a></li>
-                </ul>
-
-             <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder=" " aria-label="Search" class="search-field">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">SEARCH</button>
-              </form>
-
-            </div>
-        </nav>
+        <script src="components/navbar.js"></script>
+        
           
         <container>
             <h1 class="entire-text">MTB SPOTLIGHT</h1>
@@ -116,74 +92,6 @@
 
     </section>
 
-    <footer class="footer">
-        <div class="container main-information">
-            <div class="row">
-                <div class="col">
-                    <a href="#">ABOUT GRANDPRIX</a>
-                    <p>If you are looking for the smoothest way to reach the top speed & cruise in front of your competitors, you’re in the right place. Welcome to GrandPrix.</p>
-                    <p class="schedule">
-                        <i class="material-icons">schedule</i>
-                        <span>Monday-Friday: 9am to 5pm; Satuday: 10am to 2pm</span>
-                    </p>
-                </div>
-                <div class="col">
-                    <a href="#">OUR SERVICES</a>
-                    <p>Chemical Engineering Projects</p>
-                    <p>Mining Engineering</p>
-                    <p>Construction Engineering</p>
-                    <p>Welding Engineering</p>
-                    <p>Space Program XYZ</p>
-                </div>
-                <div class="col">
-                    <a href="#">OFFICE IN NEW YORK</a>
-                    <p class="place">
-                        <div class="row">
-                            <div class="col-2">
-                                <i class="material-icons">place</i>
-                            </div>
-                            <div class="col">
-                                <sp>
-                                    7398 Colonial Rd, Brooklyn <br />  242 Wythe Ave #4, Brooklyn
-                                </span>
-                            </div>
-                        </div>
-                    </p>
-                    <p class="phone">
-                        <div class="row">
-                            <div class="col-2">
-                                <i class="material-icons">phone</i>
-                            </div>
-                            <div class="col">
-                                <sp>
-                                    + (123) 124-567-8901 <br /> + (123) 124-567-8901
-                                </span>
-                            </div>
-                        </div>
-                    </p>
-                    <p class="mail">
-                        <div class="row">
-                            <div class="col-2">
-                                <i class="material-icons">mail</i>
-                            </div>
-                            <div class="col">
-                                <sp>
-                                    211475@astanait.edu.kz <br /> 211475@astanait.edu.kz
-                                </span>
-                            </div>
-                        </div>
-                    </p>
-                </div>
-                <div class="col">
-                    <a href="#">OUR LOCATIONS</a>
-                    <img src="images/footer-img-5.png" alt="">
-                </div>
-            </div>
-        </div>
-        <div class="container container-inner2">
-            <p>© 2022 AITU BEST TEAM EVER, ALL RIGHTS RESERVED</p>
-        </div>
-    </footer>       
-
+    <script src="components/footer.js"></script>
 </body>
 </html>
