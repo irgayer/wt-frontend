@@ -10,11 +10,11 @@ document.write(`<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-t
 
     <div class="collapse navbar-collapse" id="navbarScroll">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
           <li class="nav-item"><a class="nav-link disabled" href="#">Shop</a></li>
           <li class="nav-item active"><a class="nav-link" href="mtb.html">MTB Spotlight<span class="sr-only">(current)</span></a></li>
-          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-          <li class="nav-item"><a class="nav-link disabled" href="#">Meet The Team</a></li>
+          <li class="nav-item active"><a class="nav-link" href="blog.html">Blog</a></li>
+          <li class="nav-item active"><a class="nav-link" href="team.html">Meet The Team</a></li>
         </ul>
 
      <form class="form-inline my-2 my-lg-0">
