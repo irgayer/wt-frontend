@@ -1,15 +1,23 @@
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <title>Blog - MotoShop</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/x-icon" href="favicon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link href="https://vjs.zencdn.net/7.17.0/video-js.css" rel="stylesheet"/>
     <link rel="stylesheet" href="css/blog.css">
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="icon" type="image/x-icon" href="favicon.png">
-    <title>Blog - MotoShop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/2d7e7473f2.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
 </head>
 <body>
     <header id="header" class="header">
@@ -24,15 +32,27 @@
             </div>
         </div>
 
+
     </header>
     <div class="wrap">
         <div class="container">
             <div class="row">
-                <div class="col">
+                <div class="col-sm-8">
                     <article id="111" class="article">
-                        <a href="#" class="post-image">
-                            <img src="images/blog-img-2.jpg" alt="Responsive image" class="img-fluid">
-                        </a>
+                        <img id="myImg" src="images/blog-img-2.jpg" alt="Snow" class="img-fluid post-image">
+
+                        <!-- The Modal -->
+                        <div id="myModal" class="modal">
+
+                        <!-- The Close Button -->
+                            <span class="close">&times;</span>
+
+                            <!-- Modal Content (The Image) -->
+                            <img class="modal-content" id="img01">
+
+                            <!-- Modal Caption (Image Text) -->
+                            <div id="caption"></div>
+                        </div>
                         <div class="post-text">
                             <div class="post-info-top">
                                 <div class="published">
@@ -46,7 +66,7 @@
                         <div class="post-text-main">
                             <h2 class="entry-title">Pure Adrenaline Rush</h2>
                             <div class="post-excerpt-holder">
-                                <p class="post-excerpt">
+                                <p class="post-excerpt" id="paragraph">
                                     Lorem ipsum dolor sit amet, sea no tantas consul disputationi, ei his tota legere. Eu affert malorum consequuntur mea, aeque eirmod equidem ea vis. His ea case simul salutatus, te per hinc insolens instructior. Fastidii mentitum mel ex, nam tantas insolens conclusionemque ex, quo ut modus tritani. Enim dolor laoreet ei ...
                                 </p>
                             </div>
@@ -74,9 +94,20 @@
                         </div>
                     </article>
                     <article id="112" class="article">
-                        <a href="#" class="post-image">
-                            <img src="images/blog-img-6.jpg" alt="Responsive image" class="img-fluid">
-                        </a>
+                        <img id="myImg" src="images/blog-img-6.jpg" alt="Snow" class="img-fluid post-image">
+
+                        <!-- The Modal -->
+                        <div id="myModal" class="modal">
+
+                        <!-- The Close Button -->
+                            <span class="close">&times;</span>
+
+                            <!-- Modal Content (The Image) -->
+                            <img class="modal-content" id="img01">
+
+                            <!-- Modal Caption (Image Text) -->
+                            <div id="caption"></div>
+                        </div>
                         <div class="post-text">
                             <div class="post-info-top">
                                 <div class="published">
@@ -90,7 +121,7 @@
                         <div class="post-text-main">
                             <h2 class="entry-title">ANNOUNCES RETURNING 2020</h2>
                             <div class="post-excerpt-holder">
-                                <p class="post-excerpt">
+                                <p class="post-excerpt" id="paragraph">
                                     Lorem ipsum dolor sit amet, sea no tantas consul disputationi, ei his tota legere. Eu affert malorum consequuntur mea, aeque eirmod equidem ea vis. His ea case simul salutatus, te per hinc insolens instructior. Fastidii mentitum mel ex, nam tantas insolens conclusionemque ex, quo ut modus tritani. Enim dolor laoreet ei ...
                                 </p>
                             </div>
@@ -118,21 +149,29 @@
                         </div>
                     </article>
                 </div>
-                <div class="col-3">
-                    <a href="#" class="aiw-image">
-                        <img src="images/author-img-2.webp" alt="Responsive image" class="img-fluid" height="271" width="271">
+                <div class="col-sm-4">
+                    <a class="aiw-image" id="author" onclick="play()">
+                        <img src="images/author-img-2.webp" alt="Responsive image" class="img-fluid" id="author-pic" height="271" width="271">
                     </a>
                     <h4 class="aut-title">About Me</h4>
-                    <p class="auth-text">
+                    <p class="auth-text" id="paragraph">
                         Lorem ipsum dolor sit amet, conse ctetuer adipiscing elit, sed diam nonum nibhie. Aenean sollici tudin, lorem auci elit consequat ipsutis sem niuis sed odio it amet nibh vulputate cursus. Ad per labores accusam.
                     </p>
                     <div class="form-outline">
-                        <input type="search" id="form1" class="form-control" placeholder="Search here" aria-label="Search" />
-                      </div>
+                        <input type="text" name="search" placeholder="Search..">
+                    </div>
                 </div>
+                <div class="button"></div>
             </div>
         </div>
     </div>
+
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="components/footer.js"></script>
+    <script src="components/blog.js"></script>
+    <script src="https://vjs.zencdn.net/7.17.0/video.min.js"></script>
+    <audio src="sounds/author.m4a" id="audio"></audio>
 </body>
 </html>
