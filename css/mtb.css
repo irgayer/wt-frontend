@@ -40,6 +40,7 @@ h1, h2, h3, h4, h5, h6 {
     background: url('../images/blog-title-img.webp') no-repeat center top / cover;
     max-width: 100%;
     height: 500px;
+    background-size: cover;
 }
 
 .container_MTB{
@@ -50,10 +51,6 @@ h1, h2, h3, h4, h5, h6 {
 ._MTB{
     display: table-cell;
     font-size: 4.58vw;
-}
-
-.container {
-    max-width: 1300px;
 }
 
 .nav-item{
@@ -115,7 +112,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* content */
-.container {
+.main-container {
+    max-width: 1300px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
     padding-top: 120px;
     padding-bottom: 120px;
 }
@@ -190,6 +193,16 @@ color: #ed1d24;
 }
 
 /* Footer2 */
+
+.container {
+    max-width: 1300px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 .footer {
     margin: 0;
     display: block;
@@ -225,4 +238,120 @@ color: #ed1d24;
 
 .footer .main-information {
     padding-bottom: 40px;
+}
+
+
+.button {   
+    display: inline-block;   
+    background-color: #ed1d24;   
+    width: 50px;   
+    height: 50px;   
+    text-align: center;   
+    border-radius: 4px;   
+    margin: 30px;   
+    position: fixed;   
+    bottom: 30px;   
+    right: 30px;   
+    transition: background-color .3s;   
+    z-index: 1000;
+    display: none; 
+ } 
+.show{
+    display: block;
+}
+
+ .button:hover {   
+    cursor: pointer;   
+    background-color: #333; 
+ } 
+ .button:active {   
+    background-color: #555; 
+ }
+
+ .button::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff; 
+ } 
+
+ a:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+#meme:hover {
+    background-color:#ed1d24;
+    color: #fff;
+    text-decoration: underline; 
+}
+
+ .button {
+    transition: background-color .3s,
+      opacity .5s, visibility .5s;
+  } 
+
+  .modal-btn{
+    background-color: #000;  
+    color: #fff;
+    font-family: 'Rajdhani'; 
+    font-size: 22px;
+    font-weight: 700;
+    width: 100px;   
+    height: 50px; 
+    position: relative;
+    text-align: center;   
+    border-radius: 4px;     
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+
+
+.popup{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99999999;
+    display: none;
+}
+
+.popup_overlay{
+    position: absolute;
+    background: rgba(0, 0, 0, 0.86);
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup_body{
+    width: 400px;
+    background: white;
+    border-radius: 5px;
+    padding: 40px;
+    position: relative;
+}
+
+.popup_close{
+    color: black;
+    position: absolute;
+    right: 25px;
+    top: 20px;
+}
+
+
+.show, .popup.show{
+    display: block;
+}
+
+#demo{
+    margin-top:40px;
 }
